@@ -48,3 +48,33 @@ console.log(object3.hasOwnProperty("1")); // true
 console.log(object3.hasOwnProperty("5")); // false
 
 
+//+++++++++++++++++++++++++++++++++ objects part 2 +++++++++++++++++++++++++++++++++++++++
+
+
+const course ={
+    courseName: "JavaScript",
+    coursePrice: 999,
+    courseDuration: "3 months",
+}
+
+
+const {courseName, coursePrice, courseDuration} = course; // destructuring assignment
+console.log(courseName); // JavaScript
+console.log(coursePrice); // 999
+console.log(courseDuration); // 3 months
+
+const {courseName: name, coursePrice: price, courseDuration: duration} = course; // renaming variables while destructuring
+console.log(name); // JavaScript
+console.log(price); // 999
+console.log(duration); // 3 months
+
+
+
+// json object notation
+// in json object notation we use double quotes for keys and values
+
+// {
+//    "courseName": "JavaScript",
+//    "coursePrice": 999,
+//    "courseDuration": "3 months",
+// }
