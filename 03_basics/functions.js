@@ -1,0 +1,1 @@
+// this is my learning for JavaScript functions
