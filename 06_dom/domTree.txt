@@ -1,0 +1,13 @@
+               Window
+                  |
+               Document
+                  |
+                <html>
+              /      \
+         <head>     <body>
+         /        /   |     \
+   <title>       <h1> <p> <div>
+                |     |       |
+                Text   Text   <span>
+                                
+
