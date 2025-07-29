@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | CHAI OR CODE</title>
+</head>
+<body style="background-color: rgb(20, 20, 20) ; color: white; padding: 20px; text-align: center;">
+    <div class="parent"> 
+        <div class="day"> MONDAY </div>
+        <div class="day"> TUESDAY </div>
+        <div class="day"> WEDNESDAY </div>
+        <div class="day"> THURSDAY </div>
+        <div class="day"> FRIDAY </div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[1].style.color = 'orange';
+    console.log("NODES :" , parent.childNodes );
+    // This is a text node which is not visible in the DOM tree.
+    // it is used to represent text content in the DOM.
+    // it is not a visible element but it is part of the DOM structure.
+    // it is a complex structure that includes elements, attributes, and text nodes. 
+    // even line breaks and spaces are considered text nodes in the DOM. parent.childNodes
+
+    
+</script>
+</html>
