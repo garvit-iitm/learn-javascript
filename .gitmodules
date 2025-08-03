@@ -1,0 +1,3 @@
+[submodule "07_projects/javaScript-projects"]
+	path = 07_projects/javaScript-projects
+	url = https://github.com/garvit-iitm/javaScript-projects.git
