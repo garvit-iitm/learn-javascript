@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #363636;">
+
+    <ul style="color: white;  ">
+        <li>UNSENT: Client has been created. <code>open()</code> not called.</li>
+        <li>OPENED: <code>open()</code> has been called.</li>
+        <li>HEADERS_RECEIVED: <code>send()</code> has been called, and headers and status are available.</li>
+        <li>LOADING: Downloading; <code>responseText</code> holds partial data.</li>
+        <li>DONE: The operation is complete.</li>
+    </ul>
+    
+</body>
+<script>
+     
+    const requestUrl = 'https://api.github.com/users/garvit-iitm'
+    const xhr = new XMLHttpRequest ();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function( ) {
+        console. log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console. log(typeof data);
+            console. log(data.name);
+        }
+    }
+
+    xhr.send ();
+</script>
+</html>
